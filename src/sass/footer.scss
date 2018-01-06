@@ -1,0 +1,236 @@
+.footer_top{
+	width: 100%;
+	height: 248px;
+	background: #fbfdfe;
+	border-top: 1px solid #ededed;
+	.footer_top_mix{
+		width: 85%;
+		height: 248px;
+		margin: 0 auto;
+		padding-top: 51px;
+		padding-bottom: 78px;
+		box-sizing: border-box;
+		.servers{
+			height: 16px;
+			padding-bottom: 42px;
+			a{
+				display: block;
+				width: 222px;
+				height: 16px;
+				position: relative;
+				top: 0px;
+				left: 485px;
+				background: url(../images/index/icon.png) no-repeat 40px -416px;
+				p{
+					display: block;
+					height: 16px;
+					background: url(../images/index/icon.png) no-repeat -173px -355px;
+				}
+			}
+		}
+		.slogen{
+			ul{
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				li{
+					dt{
+						width: 56px;
+						height: 60px;
+						float: left;
+					}
+					dd{
+						margin-left: 15px;
+						margin-top: 15px;
+						float: left;
+						.chinesetop{
+							color: #737373;
+						}
+						.english{
+							font-size: 12px;
+							margin-top: 5px;
+							color: #cccccc;
+						}
+					}
+					.for1{
+						dt{
+							background: url(../images/index/icon.png) no-repeat 0px -355px;
+						}
+					}
+					.for2{
+						dt{
+							background: url(../images/index/icon.png) no-repeat -145px -217px;
+						}
+					}
+					.for3{
+						dt{
+							background: url(../images/index/icon.png) no-repeat -57px -351px;
+						}
+					}
+					.for4{
+						dt{
+							margin-top: 3px;
+							background: url(../images/index/icon.png) no-repeat -115px -351px;
+						}
+						.english{
+							 margin-top: 5px;
+						}
+						.chinesetop_phone{
+							width: 117px;
+							height: 24px;
+							background: url(../images/index/icon.png) no-repeat 0px -432px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.footer_bottom{
+	width: 100%;
+	height: 223px;
+	background: #25292e;
+	.footer_bottom_mix{
+		width: 85%;
+		height: 223px;
+		margin: 0 auto;
+		padding-top: 40px;
+		box-sizing: border-box;
+		.dow{
+			width: 196px;
+			height: 44px;
+			a{
+				display: block;
+				width: 196px;
+				height: 44px;
+				.dow_1{
+					dt{
+						float: left;
+						width: 15px;
+						height: 45px;
+						padding-right: 45px;
+						background: url(../images/index/icon.png) no-repeat -175px 0px;
+					}
+					dd{
+						color: #5c5c5c;
+						font-size: 14px;
+						line-height: 25px;
+						letter-spacing: 1px;
+						p{
+							&:first-child{
+								font-size:16px;
+							}
+						}
+					}
+				}
+			}
+			a:hover{
+				dd{
+					color: #979393;
+				}
+			}
+		}
+		.footer_word{
+			width: 800px;
+			height: 108px;
+			margin-top: 20px;
+			p{
+				font-size: 12px;
+				color:#5c5c5c ;
+				line-height: 18px;
+				a{
+					font-size: 13px;
+					padding: 0 10px 0 8px;
+					&:first-child{
+						padding:0 10px 0 0 ;
+					}
+				}
+				a:hover{
+					color: #979393;
+				} 
+			}
+			.footer_word_bottom{
+				margin-top: 10px;
+			}
+		}
+		.commun{
+			width: 150px;
+			height: 30px;
+			position: relative;
+			top: -162px;
+			left: 870px;
+			.commun_1{
+				width: 150px;
+				height: 30px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				li{
+					float: left;
+				}
+				.commun_1_1{
+					a{
+						display: block;
+						width: 30px;
+						height: 25px;
+						position: relative;
+						opacity:0.2;
+						background: url(../images/index/icon.png) no-repeat -98px -19px;
+						div{
+							display: none;
+							position: absolute;
+							top: -189px;
+							left: -62px;
+							width: 145px;
+							height: 194px;
+							s{
+								width: 145px;
+								height: 145px;
+								position: absolute;
+								top: 0;
+								left: 0;
+								background: #25292e url(../images/index/icon.png) no-repeat 0px -157px;
+							}
+						}
+					}
+				}
+				.commun_1_2{
+					a{
+						display: block;
+						width: 25px;
+						height: 25px;
+						background: url(../images/index/icon.png) no-repeat -149px -19px;
+						opacity: 0.2;
+					}
+				}
+				.commun_1_3{
+					a{
+						display: block;
+						width: 25px;
+						height: 25px;
+						background: url(../images/index/icon.png) no-repeat -125px -19px;
+						opacity: 0.2;
+					}
+				}
+				.commun_1_1:hover{
+					a{
+						opacity: 1;
+						div{
+							display: block;
+						}
+					}
+				}
+				.commun_1_2:hover{
+					a{
+						opacity: 1;
+					}
+				}
+				.commun_1_3:hover{
+					a{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
