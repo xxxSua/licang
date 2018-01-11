@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>注册</title>
 	<link rel="stylesheet" type="text/css" href="../css/regist.css">
+	<script src="/lib/requirejs/require.js" data-main="/js/regist"></script>
 </head>
 <body>
 	<div class="regist_mix">
@@ -15,19 +16,19 @@
 			<input type="text" id="regist_phone_nb" value="" placeholder="请输入手机号">
 		</div>
 		<div class="regist_yanzhengma">
-			<span>验证码</span>
-			<input type="text" id="regist_yanzhengma_nb" value="" placeholder="输入验证码">
-			<div class="regist_yanzhengma_btn">
+			<span>用户名</span>
+			<input type="text" id="regist_yanzhengma_nb" value="" placeholder="输入用户名">
+<!-- 			<div class="regist_yanzhengma_btn">
 				获取验证码
-			</div>
+			</div> -->
 		</div>
 		<div class="regist_build_pw">
 			<span>创建密码</span>
-			<input type="text" id="regist_pw" value="" placeholder="6－20位字符组成，区分大小写">
+			<input type="password" id="regist_pw" value="" placeholder="6－20位字符组成，区分大小写">
 		</div>
 		<div class="regist_sure_pw">
 			<span>密码确认</span>
-			<input type="text" id="regist_sure_txt" value=""
+			<input type="password" id="regist_sure_txt" value=""
 			placeholder="确认密码">
 		</div>
 		<div class="isagree">

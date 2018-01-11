@@ -3,15 +3,84 @@
 <head>
 	<meta charset="UTF-8">
 	<title>良仓 - 生活美学指南</title>
-	<!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
-	<script src="lib/requirejs/require.js" data-main="js/index"></script>
+	<script src="lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="/lib/requirejs/require.js" data-main="/js/index"></script>
+	<!-- <script src="js/index.js"></script> -->
 </head>
 <body>
 	<!-- 头部 -->
 	<div class="header"></div>
-	<div class="main">222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222</div>
+	<!-- 内容 -->
+	<div class="main">
+		<div class="main_mix">
+			<div class="mycarousel" >
+				<ul class="carousel_img">
+					<li><img src="images/index/1130.png"></li>
+					<li><img src="images/index/1139.jpg"></li>
+					<li><img src="images/index/1140.jpg"></li>
+				</ul>
+				<ul class="pages"></ul>
+				<div class="prve"></div>
+				<div class="next"></div>
+			</div>
+			<div class="hadv">
+				<div class="item1">
+					<a href="#"><img src="images/index/it1.png"></a>
+				</div>
+				<div class="item2">
+					<a href="#"><img src="images/index/it5.jpg"></a>
+				</div>
+				<div class="item1">
+					<a href="#"><img src="images/index/it2.png"></a>
+				</div>
+				<div class="item1">
+					<a href="#"><img src="images/index/it3.png"></a>
+				</div>
+				<div class="item1">
+					<a href="#"><img src="images/index/it4.jpg"></a>
+				</div>
+			</div>
+			<div class="rqlp">
+				<h1>人气良品</h1>
+			</div>
+			<div class="shoplist">
+				<script type="text/html" id="list_template">
+					{{each products as product}}
+						<div class="it_1">
+							<div class="imgcon">
+								<a href="html/details.html" class="lj1">
+									<img src="{{product.product_img}}">
+								</a>
+								<a href="html/details.html" class="lj2">
+									<div class="it_1_info">
+										<p class="money">
+											<span>¥</span>{{product.price}}
+											<span>.00</span></p>
+										<p class="tle">{{product.title}}</p>
+										<p class="desc">{{product.detail}} </p>
+									</div>
+								</a>
+							</div>
+							<div class="bar">
+								<a href="#" class="who">
+									<img src="{{product.seller_img}}">
+									<span>{{product.seller}}</span>
+								</a>
+								<a href="#" class="goodscount">520</a>
+							</div>
+						</div>
+					{{/each}}
+				</script>
+			</div>
+			<div class="papers">
+				<a href="#"></a>
+			</div>
+		</div>
+	</div>
+	<!-- 尾部 -->
 	<div class="footer"></div>
 </body>
 </html>

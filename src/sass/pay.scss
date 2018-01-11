@@ -1,0 +1,180 @@
+*{margin:0;padding: 0}
+a{text-decoration: none;color: #4d4d4d;}
+li{list-style: none;}
+.main{
+	width: 100%;
+	.main_mix{
+		width: 85%;
+		margin: 0 auto;
+		.pay_img{
+			margin-top: 10px;
+			img{
+				width: 100%;
+			}
+		}
+		.pay_money{
+			font-size: 6px;
+			width: 350px;
+			height: 92px;
+			margin: 20px auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.item{
+				color: #666666;
+				font-size: 13px;
+			}
+			>:last-child{
+				color: #63aedb;
+			}
+		}
+		.shopping_ad{
+			height: 1000px;
+			.shdz{
+				height: 37px;
+				line-height: 37px;
+				border-bottom: 1px solid;
+			}
+			.newaddr{
+				height: 213px;
+				margin-top: 40px;
+				.addform{
+					height: 213px;
+					tr{
+						padding: 8px 0;
+						height: 44px;
+						.txt{
+							font-size: 14px;
+							color: #777777;
+							padding-right: 20px;
+							padding-top: 3px;
+						}
+						.inpt{
+							width: 158px;
+							height: 28px;
+							outline: none;
+							border:2px solid #dedede;
+						}
+						.addrbtn{
+							width: 94px;
+							height: 25px;
+							background: #7fa6c5;
+							border: none;
+							color: #fff;
+						}
+					}
+				}
+			}
+			.ddxq{
+				height: 37px;
+				line-height: 37px;
+				border-bottom: 1px solid;
+				margin-top: 80px;
+			}
+			.ordernote{
+				width:780px;
+				height: 36px;
+				margin-top: 20px;
+				margin-left: 30px; 
+				color: #666666;
+				font-size: 13px;
+				.paynote{
+					width: 685px;
+					height: 28px;
+					background: #eeeeee;
+					border: none;
+				}
+			}
+			.daimoney{
+				width: 490px;
+				height: 30px;
+				margin-left: 30px;
+				margin-top: 20px;
+				color: #666666;
+				font-size: 13px;
+				.moneytxt{
+					margin-left: 20px;
+					width: 214px;
+					height: 25px;
+					border: 1px solid #eeeeee;
+				}
+				.moneybtn{
+					width: 90px;
+					height: 29px;
+					color: #fff;
+					background: #75a7d4;
+					border: none;
+					outline: none;
+				}
+			}
+			.moneymag{
+				width: 200px;
+				position: relative;
+				top: -30px;
+				right: -870px;
+				height: 100px;
+				text-align: right;
+				p{
+					margin: 10px 0;
+					color: #666666;
+					font-size: 12px;
+				}
+				.p2{
+					font-size: 14px;
+					span{
+						font-size: 18px;
+						color: #0c8dda;
+					}
+				}
+				.p3{
+					color: #d20019;
+				}
+			}
+			.payway{
+				width: 100px;
+				height: 100px;
+				position: relative;
+				top: 0px;
+				left: 490px;
+				text-align: center;
+				.navt{
+					color: #666666;
+					font-size: 15px;
+				}
+				input{
+					margin-top: 60px;
+				}
+				img{
+					position: relative;
+					top: 7px;
+					left: 7px;
+				}
+			}
+			.brm{
+				margin-top: 50px;
+				display: block;
+				width: 100%;
+				height: 15px;
+				text-align: center;
+				color: #6393b4;
+				font-size: 12px;
+			}
+			.js{
+				width: 168px;
+				height: 30px;
+				position: relative;
+				top: 25px;
+				left: 445px;
+				input{
+					width: 168px;
+					height: 30px;
+					text-align: center;
+					line-height: 30px;
+					color: #fff;
+					background: #74a7d4;
+					border: none;
+				}
+			}
+		}
+	}
+}

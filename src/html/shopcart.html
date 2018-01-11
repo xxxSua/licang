@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../css/shopcart.css">
+	<script src="/lib/requirejs/require.js" data-main="/js/shopcart"></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header"></div>
+	<!-- 内容 -->
+	<div class="main">
+		<div class="main_mix">
+			<div class="shopping">
+				|<div class="item">
+					<span>购物车</span>
+				</div>
+				|<div class="item">
+					<span>付款</span>
+				</div>|
+			</div>
+			<div class="shopping_list">
+				<table class="cartab">
+					<tbody>
+						<tr>
+							<th class="txt1">
+								<input type="checkbox" class="chkbox">
+								全选
+							</th>
+							<th width="410">良品</th>
+							<th width="160">数量</th>
+							<th width="180">单价（元）</th>
+							<th width="180">小计（元）</th>
+							<th>操作</th>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="shopping_pay">
+			</div>
+			<div class="shopping_bottom">
+				<p class="bottom1">
+					良品总价
+					<font style="font-size: 18px;">/</font>
+					<span class="priceno">
+						 ¥
+						<font id="paymoney">0.00</font>
+					</span>
+				</p>
+				<p class="total">
+					<input type="button" class="ckpay" value="立即结算">
+				</p>
+				<fieldset>
+					<legend>
+						<a href="../index.html">继续购物</a>
+					</legend>
+				</fieldset>
+			</div>
+		</div>
+	</div>
+	<!-- 尾部 -->
+	<div class="footer"></div>
+	<!-- 模板 -->
+	<script type="text/html" id="cart_template">
+		{{each products as product}}
+		<div class="product">
+			<div class="ck" style="width: 15px;height: 15px"><input type="checkbox" class="ck_product"></div>
+			<!-- <div class="id" style="display: none;">{{product.id}}</div>	 -->
+			<div class="img" style="width: 100px;height: 100px; "><img src="{{product.img}}" style="width:90px; height:80px;"></div>
+			<div class="name" style="width: 390px;height: 80px">{{product.name}}【<span class="color">{{product.color}}</span>】</div>
+			<div class="amount" style="width: 100px;height: 22px;"><span class="minus">-</span><input type="text" class="amount_num" value="{{product.amount}}" style="width:40px; text-align: center;"><span class="add">+</span></div>
+			<div class="price" style="width: 100px;height: 22px;">¥{{product.money}}.00</div>
+			<div class="sub" style="width: 100px;height: 22px;">¥{{product.money * product.amount}}.00</div>
+			<div class="oper"><a href="javascript:void(0)" class="del">删除</a></div>
+		</div>
+		{{/each}}
+	</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>付款</title>
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../css/pay.css">
+	<script src="/lib/requirejs/require.js" data-main="/js/pay.js"></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header"></div>
+	<!-- 内容 -->
+	<div class="main">
+		<div class="main_mix">
+			<div class="pay_img">
+				<img src="../images/index/pay.jpg">
+			</div>
+			<div class="pay_money">
+				|<div class="item">
+					<span>购物车</span>
+				</div>
+				|<div class="item">
+					<span>付款</span>
+				</div>|
+			</div>
+			<div class="shopping_ad">
+				<div class="shdz">
+					收货地址
+				</div>
+				<div class="newaddr">
+					<form class="addform">
+						<table>
+							<tbody>
+								<tr>
+									<td class="txt">
+										收货人姓名
+									</td>
+									<td>
+										<input type="text" class="inpt" >
+									</td>
+								</tr>
+								<tr>
+									<td class="txt">
+										省/市
+									</td>
+									<td>
+										<input type="text" class="inpt" >
+									</td>
+								</tr>
+								<tr>
+									<td class="txt">
+										详细地址
+									</td>
+									<td>
+										<input type="text" class="inpt" style="width: 418px;">
+									</td>
+								</tr>
+								<tr>
+									<td class="txt">
+										电话
+									</td>
+									<td>
+										<input type="text" class="inpt">
+									</td>
+								</tr>
+								<tr>
+									<td class="txt">
+									</td>
+									<td>
+										<input type="button" class="addrbtn" value="保存地址">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</div>
+				<div class="ddxq">
+					订单详情
+				</div>
+				<div class="carlistcon" style="display: none;">
+					<ul id="shopcarlist">
+						<li>
+							<div class="imgcon">
+								<img src="#">
+							</div>
+							<div class="infocon">
+								<div class="t" style="border: none; margin-top: 25px">
+									<span style="width: 590px;"></span>
+									<span style="width: 60px;"></span>
+									<span style="width: 80px"></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="nav" style="margin-top: 10px;height: 0px;font-size: 0px;"></div>
+				</div>
+				<div class="ordernote">
+					备注：
+					<input type="text" class="paynote" placeholder="您可在此写下订单备注,不得超过350字符">
+				</div>
+				<div class="daimoney">
+					激活代金券
+					<input type="text" class="moneytxt" placeholder="请输入代金券">
+					<input type="button" class="moneybtn" value="确认使用">
+					<a href="#" style="border-bottom: 1px solid ; font-size: 12px;color: #666666;">代金券使用方法</a>
+				</div>
+				<div class="moneymag">
+					<p class="p1">
+                  代金券减免    - <span>0.00元</span></p>
+                  <p class="p2">付款总额 : <span>¥0.00</span></p>
+                  <p class="p3">为您节省   <span>0.00元</span></p>
+                  <p class="p4">(含¥<span>0.00</span>礼物包装费)</p>
+				</div>
+				<div class="payway">
+					<div class="navt">
+						结算方式
+					</div>
+					<input type="radio" >
+					<img src="../images/index/zfb.png">
+				</div>
+				<p class="brm">
+	             若您遇到支付问题，请联系客服热线 400 897 6336（工作日 09:00-18:00）
+	             </p>
+	             <div class="js">
+	             	<input type="button" value="结算">
+	             </div>
+			</div>
+		</div>
+	</div>
+	<!-- 尾部 -->
+	<div class="footer"></div>
+</body>
+</html>

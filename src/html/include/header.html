@@ -1,7 +1,7 @@
 <div class="header_top">
 	<div class="mix">
 		<div class="header_top_left">
-			<h1><a href="#"></a></h1>
+			<h1><a href="../../index.html"></a></h1>
 		</div>
 		<div class="header_top_right">
 			<ul class="header_list">
@@ -11,7 +11,7 @@
 				</li>
 				<li class="line"></li>
 				<li>
-					<a class="header_cart" href="#">购物车</a>
+					<a class="header_cart" href="/html/shopcart.html">购物车</a>
 				</li>
 				<li class="line"></li>
 				<li class="mag">
@@ -33,13 +33,20 @@
 		</div>
 	</div>
 </div>
-<div class="header_bottom">
+<!-- <div class="zw">&nbsp;</div> -->
+<div class="header_bottom" id="header_bottom">
 	<div class="mix">
 		<div class="left">
 			<ul class="list">
-				<li class="lis1"><a href="#">首页</a></li>
+				<li class="lis1"><a href="../../index.html">首页</a></li>
 				<li class="list2"><a href="#">商店</a>
 					<div class="hoverlist">
+						<div class="hover_img"><a href="#">
+							<dl>
+								<dt><img src="../../images/index/315574.jpg"></dt>
+								<dd>新视线：  2015年7月刊</dd>
+							</dl>
+						</a></div>
 						<div class="left">
 							<ul class="list2_1">
 								<li class="sp1"><a href="#">
@@ -47,23 +54,6 @@
 										<dt><img src="../../images/index/1.png"></dt>
 										<dt>家居</dt>
 									</dl>
-									<ul class="list2_1_1">
-										<li><a href="#">装饰摆件</a></li>
-										<li><a href="#">生活用品</a></li>
-										<li><a href="#">香薰香氛</a></li>
-										<li><a href="#">空气净化</a></li>
-										<li><a href="#">收纳整理</a></li>
-										<li><a href="#">床品布衣</a></li>
-										<li><a href="#">儿童家居</a></li>
-										<li><a href="#">钟表灯具</a></li>
-										<li><a href="#">衣物洗护</a></li>
-										<li><a href="#">其他</a></li>
-										<li><a href="#">运动器材</a></li>
-										<li><a href="#">眼罩</a></li>
-										<li><a href="#">情趣用品</a></li>
-										<li><a href="#">口罩</a></li>
-										<li><a href="#">电器</a></li>
-									</ul>
 								</a></li>
 								<li class="sp2"><a href="#">
 									<dl>
@@ -101,9 +91,85 @@
 										<dt>美食</dt>
 									</dl>
 								</a></li>
+								<li><a href="#">
+									<dl>
+										<dt><img src="../../images/index/8.png"></dt>
+										<dt>男装</dt>
+									</dl>
+								</a></li>
+								<li><a href="#">
+									<dl>
+										<dt><img src="../../images/index/9.png"></dt>
+										<dt>女装</dt>
+									</dl>
+								</a></li>
+								<li><a href="#">
+									<dl>
+										<dt><img src="../../images/index/10.png"></dt>
+										<dt>童装</dt>
+									</dl>
+								</a></li>
+								<li><a href="#">
+									<dl>
+										<dt><img src="../../images/index/11.png"></dt>
+										<dt>鞋包</dt>
+									</dl>
+								</a></li>
+								<li><a href="#">
+									<dl>
+										<dt><img src="../../images/index/12.png"></dt>
+										<dt>配饰</dt>
+									</dl>
+								</a></li>
+								<li><a href="#">
+									<dl>
+										<dt><img src="../../images/index/13.png"></dt>
+										<dt>美护</dt>
+									</dl>
+								</a></li>
+								<li><a href="#">
+									<dl>
+										<dt><img src="../../images/index/14.png"></dt>
+										<dt>户外</dt>
+									</dl>
+								</a></li>
+								<li><a href="#">
+									<dl>
+										<dt><img src="../../images/index/15.png"></dt>
+										<dt>植物</dt>
+									</dl>
+								</a></li>
+								<li><a href="#">
+									<dl>
+										<dt><img src="../../images/index/16.png"></dt>
+										<dt>图书</dt>
+									</dl>
+								</a></li> 
+								<li><a href="#">
+									<dl>
+										<dt><img src="../../images/index/17.png"></dt>
+										<dt>艺术</dt>
+									</dl>
+								</a></li>
+								<li><a href="#">
+									<dl>
+										<dt><img src="../../images/index/18.png"></dt>
+										<dt>礼物</dt>
+									</dl>
+								</a></li>
+								<li><a href="#">
+									<dl>
+										<dt><img src="../../images/index/19.png"></dt>
+										<dt>推荐</dt>
+									</dl>
+								</a></li>
+								<li><a href="#">
+								</a></li>
+								<li><a href="#">
+								</a></li>
 							</ul>
+
 						</div>
-						
 					</div>
 				</li>
 				<li class="list3"><a href="#">杂志</a></li>
@@ -117,3 +183,32 @@
 		</div>
 	</div>
 </div>
+<div class="clicktop"></div>
+<script type="text/javascript">
+	//导航吸顶
+	$(document).scroll(function(){
+		var h = $(document).scrollTop();
+		if (h > 56) {
+			$(".header_bottom").css({"top":"0px"})
+		}else{
+			$(".header_bottom").css({"top" : (56-h) + "px"})
+		}
+	});
+	//下拉菜单动画效果
+	$(".list2").mouseenter(function(){
+		$(".hoverlist").stop().slideDown(100);
+	})
+	$(".list2").mouseleave(function(){
+		$(".hoverlist").stop().slideUp(1000);
+	})
+	//点击回顶部
+	if ($(document).scrollTop() < 100) {
+		$(".clicktop").addClass('tophide')	
+	}else{
+		$(".clicktop").click(function(){
+			$("body,html").stop().animate({scrollTop:"0px"}, 1000)
+		})
+	}
+	
+	
+</script>

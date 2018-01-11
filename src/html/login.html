@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>登录</title>
 	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	<!-- <script src="lib/jquery/jquery-1.12.4.min.js"></script> -->
+	<script src="/lib/requirejs/require.js" data-main="/js/login"></script>
 </head>
 <body>
 	<div class="login_max">
@@ -14,15 +16,15 @@
 			<div class="dps">
 				<div class="phone_txt">
 					<div class="phone_logo"><img src="../images/login&regist/nlphone.png"></div>
-					<input type="text" id="mobile" placeholder="输入手机号">
+					<input type="text" id="mobile" placeholder="输入账号">
 				</div>
 				<div class="yanzhengma_txt">
 					<div class="yanzhengma_logo"><img src="../images/login&regist/nlcode.png"></div>
-					<input type="text" id="yanzhengma" placeholder="输入验证码">
-					<div class="huoqu">获取验证码</div>
+					<input type="password" id="yanzhengma" placeholder="输入密码">
+					<!-- <div class="huoqu">获取验证码</div> -->
 				</div>
 				<div class="isauto">
-					<input type="checkbox" id="a_auto" value="" checked="checked"><span>自动登录</span>
+					<input type="checkbox" id="a_auto" value="" checked="checked"><span>自动登录</span>	
 				</div>
 				<div class="login_btn">
 					登录
